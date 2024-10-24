@@ -14,22 +14,21 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      
+        uses: actions/checkout@v3  # Cập nhật lên phiên bản mới hơn
+
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Cập nhật lên phiên bản mới hơn
         with:
-          node-version: '18.16.0'  # Thay đổi theo phiên bản Node.js mà bạn cần
+          node-version: '18.16.0'
       
       - name: Install dependencies
         run: npm install
       
-      
-      
       - name: Build project
-        run: npm run build  # Thay đổi nếu bạn có lệnh build khác
-      
+        run: npm run build  # Thay đổi nếu anh có lệnh build khác
+
+      # Nếu anh có lệnh deploy, thêm vào đây
       - name: Deploy to Production
         run: |
           echo "Deploying to production..."
-          # Thêm lệnh deploy của bạn ở đây
+          # Thêm lệnh deploy tại đây
