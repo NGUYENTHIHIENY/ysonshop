@@ -10,5 +10,6 @@
     "dev": "wix dev",
     "lint": "eslint .",
     "build": "wix build"
+
   }
 }
