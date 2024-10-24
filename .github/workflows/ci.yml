@@ -24,8 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: Build project
-        run: npm run build  # Thay đổi nếu anh có lệnh build khác
+     
 
       # Nếu anh có lệnh deploy, thêm vào đây
       - name: Deploy to Production
