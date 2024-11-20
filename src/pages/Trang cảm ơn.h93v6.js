@@ -3,7 +3,7 @@
 
 $w.onReady(function () {
     // Write your JavaScript here
-    $w("#elementID").text = "Cảm ơn bạn đã đặt hàng!";
+    $w("#elementID").text = "Cảm ơn bạn đã đặt hàng và hẹn gặp lại bạn lần sau!";
     // To select an element by ID use: $w('#elementID')
 
     // Click 'Preview' to run your code
